@@ -1,5 +1,4 @@
-import java.text.DecimalFormat;
-import java.text.DecimalFormatSymbols;
+import java.text.NumberFormat;
 import java.util.Locale;
 
 public class PrintFormatacaoNumeros {
@@ -9,11 +8,12 @@ public class PrintFormatacaoNumeros {
         float taxa = 0.2456f;
         float valor = 7654.321f;
 
+        Locale localeBR = new Locale("en","US");
+        NumberFormat newValor = NumberFormat.getInstance(localeBR);
 
-        String dec = new DecimalFormat("#,###.##", new DecimalFormatSymbols(Locale.ENGLISH)).format(valor);
 
+        System.out.println("Valor:  R$ " + newValor.format(valor));
 
-        System.out.println("Valor: R$ " + dec);
         System.out.printf("Taxa: %.02f%% ", taxa);
 
     }

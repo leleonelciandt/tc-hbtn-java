@@ -8,7 +8,7 @@ public class PrintFormatacaoNumeros {
         float taxa = 0.2456f;
         float valor = 7654.321f;
 
-        Locale localeBR = new Locale("pt","BR");
+        Locale localeBR = new Locale("en","BR");
         NumberFormat newValor = NumberFormat.getCurrencyInstance(localeBR);
         String percent = "%";
 

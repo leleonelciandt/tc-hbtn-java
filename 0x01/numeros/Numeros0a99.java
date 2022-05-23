@@ -5,6 +5,6 @@ public class Numeros0a99 {
         while (num < 99) {
             System.out.print(num++ + ", " );
         }
-        System.out.print(num);
+        System.out.print(num + " ");
     }
 }

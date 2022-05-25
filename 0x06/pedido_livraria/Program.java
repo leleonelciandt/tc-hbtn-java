@@ -21,8 +21,9 @@ public class Program {
         };
 
         Pedido pedido1 = new Pedido(0, itensPedido1);
-
-        System.out.printf("Total Pedido: %.2f\n", pedido1.calcularTotal());
+        Double pedidoOne = pedido1.calcularTotal();
+        doubleToString(pedidoOne);
+        System.out.printf("Total Pedido: %.2f\n", pedidoOne);
 
         // Pedido 2
         ItemPedido[] itensPedido2 = new ItemPedido[] {
@@ -57,5 +58,10 @@ public class Program {
         Pedido pedido4 = new Pedido(5, itensPedido4);
 
         System.out.printf("Total Pedido: %.2f\n", pedido4.calcularTotal());
+        
+        private static void doubleToString(double x) {
+        String total = Double.toString(x);
+        total = total.replace(',', '.');
+        }
     }
 }

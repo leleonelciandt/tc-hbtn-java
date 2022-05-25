@@ -59,7 +59,7 @@ public class Program {
 
         System.out.printf("Total Pedido: %.2f\n", pedido4.calcularTotal());
         
-        private static void doubleToString(double x) {
+        public static void doubleToString(double x) {
         String total = Double.toString(x);
         total = total.replace(',', '.');
         }

@@ -66,10 +66,9 @@ public class Program {
         };
 
         Pedido pedido4 = new Pedido(5, itensPedido4);
-        String totalPedido4 = Double.toString(pedido3.calcularTotal());
-        int index4 = totalPedido3.indexOf(".");
+        String totalPedido4 = Double.toString(pedido4.calcularTotal());
+        int index4 = totalPedido4.indexOf(".");
         totalPedido4 = totalPedido4.substring(0, index3 + 3);
         System.out.println("Total Pedido: " + totalPedido4.replace('.', ','));
     }
-
 }

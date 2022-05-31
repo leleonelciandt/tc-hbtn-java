@@ -1,0 +1,23 @@
+public class Contato {
+
+    private String nome, numeroTelefone;
+    private TipoNumero tipoNumero;
+
+    public Contato(String nome, String numeroTelefone, TipoNumero tipoNumero) {
+        this.nome = nome;
+        this.numeroTelefone = numeroTelefone;
+        this.tipoNumero = tipoNumero;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getNumeroTelefone() {
+        return numeroTelefone;
+    }
+
+    public TipoNumero getTipoNumero() {
+        return tipoNumero;
+    }
+}

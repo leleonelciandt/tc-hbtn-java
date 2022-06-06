@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Blog {
 
-    ArrayList<Post> listaPostagens;
+    List<Post> listaPostagens;
 
     public Blog() {
         this.listaPostagens = new ArrayList<>();

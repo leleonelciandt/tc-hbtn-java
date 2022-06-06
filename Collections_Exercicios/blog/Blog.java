@@ -13,7 +13,7 @@ public class Blog {
     }
 
     public Set<String> obterTodosAutores(){
-        Set<String> autores = new TreeSet<>();
+        Set<String> autores = new TreeSet<String>();
 
         for (Post post : listaPostagens) {
             autores.add(post.getAutor());
@@ -23,7 +23,7 @@ public class Blog {
 
     public Map<String, Integer> obterContagemPorCategoria(){
 
-        Map<String, Integer> contagemCategoria = new TreeMap<>();
+        Map<String, Integer> contagemCategoria = new TreeMap<String, Integer>();
 
         for (Post post : listaPostagens) {
             if (contagemCategoria.containsKey(post.getCategoria())) {
@@ -34,7 +34,6 @@ public class Blog {
             }
         }
         return contagemCategoria;
-
 
     }
 

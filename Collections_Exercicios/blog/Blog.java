@@ -2,20 +2,20 @@ import java.util.*;
 
 public class Blog {
 
-    List<Post> listaPostagens;
+    List<Post> postagens;
 
     public Blog() {
-        this.listaPostagens = new ArrayList<Post>();
+        this.postagens = new ArrayList<>();
     }
 
     public void adicionarPostagem(Post post){
-        this.listaPostagens.add(post);
+        this.postagens.add(post);
     }
 
     public Set<String> obterTodosAutores(){
-        Set<String> autores = new TreeSet<String>();
+        Set<String> autores = new TreeSet<>();
 
-        for (Post post : listaPostagens) {
+        for (Post post : postagens) {
             autores.add(post.getAutor());
         }
         return autores;
@@ -25,7 +25,7 @@ public class Blog {
 
         Map<String, Integer> contagemCategoria = new TreeMap<String, Integer>();
 
-        for (Post post : listaPostagens) {
+        for (Post post : postagens) {
             if (contagemCategoria.containsKey(post.getCategoria())) {
                 Integer count = contagemCategoria.get(post.getCategoria());
                 contagemCategoria.put(post.getCategoria(), count + 1);

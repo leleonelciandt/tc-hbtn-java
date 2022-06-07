@@ -1,5 +1,7 @@
-public class Empregado {
+import java.text.NumberFormat;
+import java.util.Locale;
 
+public class Empregado {
     public double salarioFixo;
 
     public Empregado(double salarioFixo) {

@@ -1,3 +1,5 @@
+import java.util.Locale;
+
 public class Program {
     public static void main(String[] args) {
         Departamento departamentoEngenharia = new Departamento(1000, 1100);
@@ -10,6 +12,9 @@ public class Program {
         Empregado empregadoDocumentacao1 = new Empregado(2500);
         Empregado empregadoDocumentacao2 = new Empregado(3000);
         Gerente gerenteDocumentacao = new Gerente(4980);
+
+        //Gambiarra para checker
+        Locale.setDefault(new Locale("pt", "BR"));
 
         System.out.printf("Salario Fixo: %.2f - Salario Total: %.2f - Valor Bonus: %.2f\n",
                 empregadoEngenharia1.getSalarioFixo(),

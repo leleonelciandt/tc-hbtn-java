@@ -21,6 +21,7 @@ public class SerializarEstudantes<Estudante> {
 
     public List<Estudante> desserializar() {
         try (ObjectInputStream objectInput = new ObjectInputStream(new FileInputStream(this.nomeArquivo))){
+            @SuppressWarnings("unchecked")
             List<Estudante> listaEstudantes = (List<Estudante>) objectInput.readObject();
             return listaEstudantes;
         } catch(Exception e) {
